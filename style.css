@@ -1,6 +1,8 @@
 .typewriter {
 	position: relative;
 	width: 100%;
+	max-width: 1920px;
+	min-width: 480px;
 	height: 100vh; /* viewport height */
 	display: flex;
 	align-items: center;
