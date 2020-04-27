@@ -1,57 +1,21 @@
-.typewriter {
-	position: relative;
-	width: 100%;
-	max-width: 1920px;
-	min-width: 480px;
-	height: 100vh; /* viewport height */
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden; 
-	background-color: lightblue;
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.typewriter h1 {
+body {
+	background: #24272E;
+}
+header {
+	background: white;
+	padding: 20px;
+}
+
+header > h1 {
+	color: #25272E;
 	text-align: center;
-	font-size: 3rem; /* 6 times default*/
-	font-family: "OpenSans";
-  	overflow: hidden; /* Ensures the content is not revealed until the animation */
-  	border-right: .15em solid orange; /* The typwriter cursor */
-  	white-space: nowrap; /* Keeps the content on a single line */
-  	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  	letter-spacing: .15em; /* Adjust as needed */
-  	animation: 
-   		typing 3.5s steps(40, end),
-    	blink-caret .75s step-end infinite;
-}
-
-.video-container {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-}
-
-.color-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: lightblue;
-	width: 100%;
-	height: 100vh;
-	opacity: 0.7;
-}
-
-
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+	font-family: 'Asap', sans-serif;
 }
