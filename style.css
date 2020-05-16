@@ -97,6 +97,7 @@ header > h1 {
 
 	#sidenav a:hover {
 		left: 0; /* unhide on hover*/
+		background-color: unset;
 	}
 	#sidenav a:active {
 		left: 0;
