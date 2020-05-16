@@ -51,10 +51,9 @@ header > h1 {
 
 #sidenav a:hover {
 	top: 0; /* unhide on hover*/
+	background-color: pink;
 }
-#sidenav a:active {
-	top: 0;
-}
+
 #about {
   left: 0px;
   background-color: #d5f4e6;
@@ -101,6 +100,7 @@ header > h1 {
 	}
 	#sidenav a:active {
 		left: 0;
+		background-color: pink;
 	}
 	#about {
 		top: 10px;
