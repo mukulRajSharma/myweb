@@ -52,7 +52,9 @@ header > h1 {
 #sidenav a:hover {
 	top: 0; /* unhide on hover*/
 }
-
+#sidenav a:active {
+	top: 0;
+}
 #about {
   left: 0px;
   background-color: #d5f4e6;
@@ -91,13 +93,15 @@ header > h1 {
 		text-orientation: upright;
 		writing-mode: unset;
 		display: inherit;
-		margin: 10px;
+		margin: 10px 0 0 0;
 	}
 
 	#sidenav a:hover {
 		left: 0; /* unhide on hover*/
 	}
-
+	#sidenav a:active {
+		left: 0;
+	}
 	#about {
 		top: 10px;
 		left: unset;
