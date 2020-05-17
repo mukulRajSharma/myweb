@@ -82,17 +82,18 @@ header > h1 {
 
 	#sidenav a {
 		position: relative; /* Position them relative to the browser window */
-		top: unset;
-		left: 0px;  /*Position them outside of the screen */
+		top:0;
+		right:0px;
+		left: 0;  /*Position them outside of the screen */
 		padding: 15px; /* 15px padding */
-		height: 75px;
 		width: max-content;
+		height: 100px;
 		text-decoration: none; /* Remove underline */
-		font-size: em; /* Increase font size */
+		font-size: 50px; /* Increase font size */
 		text-orientation: upright;
 		writing-mode: unset;
 		display: inherit;
-		margin: 10px 0 0 0;
+		margin: 30px 0;
 	}
 
 	#sidenav a:hover {
