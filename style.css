@@ -37,21 +37,23 @@ header > h1 {
 
 #sidenav a {
 	position: absolute; /* Position them relative to the browser window */
-  	top: -60px; /* Position them outside of the screen */
+  	top: 0; /* Position them outside of the screen */
 	transition: 0.3s; /* Add transition on hover */
+	transition-duration: 1s;
 	padding: 15px; /* 15px padding */
 	width: 50px; /* Set a specific width */
 	text-decoration: none; /* Remove underline */
-	font-size: 20px; /* Increase font size */
+	font-size: 30px; /* Increase font size */
 	color: black; /* White text color */
 	border-radius: 5px 5px 5px 5px;
 	writing-mode: vertical-rl;
+	height: max-width;
   	text-orientation: upright;
 }
 
 #sidenav a:hover {
-	top: 0; /* unhide on hover*/
 	background-color: pink;
+	top:10%;
 }
 
 #about {
@@ -80,15 +82,12 @@ header > h1 {
 	#sidenav a {
 		position: relative; /* Position them relative to the browser window */
 		top: unset;
-		left: -80px;  /*Position them outside of the screen */
-		transition: 0.3s; /* Add transition on hover */
+		left: 0px;  /*Position them outside of the screen */
 		padding: 15px; /* 15px padding */
 		height: 100px;
 		width: max-content;
 		text-decoration: none; /* Remove underline */
 		font-size: 50px; /* Increase font size */
-		color: black; /* White text color */
-		border-radius: 5px 5px 5px 5px;
 		text-orientation: upright;
 		writing-mode: unset;
 		display: inherit;
@@ -96,33 +95,7 @@ header > h1 {
 	}
 
 	#sidenav a:hover {
-		left: 0; /* unhide on hover*/
-		background-color: unset;
-	}
-	#sidenav a:active {
-		left: 0;
+		left: 10%; /* unhide on hover*/
 		background-color: pink;
-	}
-	#about {
-		top: 10px;
-		left: unset;
-		background-color: #d5f4e6;
-	}
-	#projects {
-		top: 10px;
-		background-color: #80ced6; /* Red */
-	}
-	#quotes {
-		top: 200px;
-		background-color: #fefbd8; /* Blue */
-	}
-	#blog {
-		top: 300px;
-		background-color: #618685;
-	}
-	#contact {
-		top: 400px;
-		left: unset;
-		background-color: white; /* Light Black */
 	}
 }
