@@ -9,7 +9,7 @@
 body {
 	background: #24272E;
 }
-
+/*
 header {
 	background: #24272E;
 	padding: 20px;
@@ -19,7 +19,7 @@ header > h1 {
 	color: #25272E;
 	text-align: center;
 	font-family: 'Asap', sans-serif;
-}
+}*/
 
 .footer {
 	position: fixed;
@@ -36,44 +36,45 @@ header > h1 {
 }
 
 #sidenav a {
-	position: absolute; /* Position them relative to the browser window */
-  	top: 0; /* Position them outside of the screen */
+	position: relative; /* Position them relative to the browser window */
+  	top: 0px; /* Position them outside of the screen */
 	transition: 0.3s; /* Add transition on hover */
 	transition-duration: 1s;
-	padding: 15px; /* 15px padding */
+	padding: 10px 10px; /* 15px padding */
 	width: 50px; /* Set a specific width */
 	text-decoration: none; /* Remove underline */
-	font-size: 30px; /* Increase font size */
+	font-size: 2em; /* Increase font size */
 	color: black; /* White text color */
 	border-radius: 5px 5px 5px 5px;
 	writing-mode: vertical-rl;
 	height: max-width;
   	text-orientation: upright;
+  	margin: 0 10px 0 0;
 }
 
 #sidenav a:hover {
 	background-color: pink;
-	top:10%;
+	top:50px;
 }
 
 #about {
-  left: 0px;
+  /*left: 0px;*/
   background-color: #d5f4e6;
 }
 #projects {
-  left: 100px;
+  /*left: 100px;*/
   background-color: #80ced6; /* Red */
 }
 #quotes {
-  left: 200px;
+  /*left: 200px;*/
   background-color: #fefbd8; /* Blue */
 }
 #blog {
-	left: 300px;
+	/*left: 300px;*/
 	background-color: #618685;
 }
 #contact {
-  left: 400px;
+  /*left: 400px;*/
   background-color: white /* Light Black */
 }
 
@@ -84,10 +85,10 @@ header > h1 {
 		top: unset;
 		left: 0px;  /*Position them outside of the screen */
 		padding: 15px; /* 15px padding */
-		height: 100px;
+		height: 75px;
 		width: max-content;
 		text-decoration: none; /* Remove underline */
-		font-size: 50px; /* Increase font size */
+		font-size: em; /* Increase font size */
 		text-orientation: upright;
 		writing-mode: unset;
 		display: inherit;
@@ -95,6 +96,7 @@ header > h1 {
 	}
 
 	#sidenav a:hover {
+		top: unset;
 		left: 10%; /* unhide on hover*/
 		background-color: pink;
 	}
