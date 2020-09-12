@@ -7,6 +7,7 @@
 }
 
 body {
+	/*background: #24272E;*/
 	background: #24272E;
 }
 /*
@@ -32,7 +33,7 @@ header > h1 {
 .footer > p {
 	color: white;
 	text-align: center;
-	fzont-family: 'comic', sans-serif;
+	font-family: 'comic', sans-serif;
 }
 
 #sidenav a {
@@ -77,6 +78,24 @@ header > h1 {
   /*left: 400px;*/
   background-color: white /* Light Black */
 }
+
+#right {
+	color: antiquewhite;
+	margin-left: 50%;
+	width: 50%;
+}
+
+#top-right {
+	position: absolute;
+	top: 0%;
+}
+#top-right > p {
+	color: cadetblue;
+}
+#bottom-right > p{
+	color: cadetblue;
+}
+
 
 @media (max-width: 1000px) {
 
