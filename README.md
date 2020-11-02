@@ -1,2 +1,2 @@
 # mukulrajsharma
-personal website, hosted by netlify
+personal website, hosted on netlify (because why not, it's free).
