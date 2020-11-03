@@ -353,6 +353,12 @@ template {
   display: none;
 }
 
+.top-quote {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 1000;
+}
 [hidden] {
   display: none !important;
 }
@@ -10025,8 +10031,9 @@ h1 {
 }
 
 p.lead {
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   font-weight: 400;
+  color: whitesmoke;
 }
 
 .subheading {
