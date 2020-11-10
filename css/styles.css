@@ -158,6 +158,8 @@ sup {
   top: -0.5em;
 }
 
+
+
 a {
   color: #bd5d38;
   text-decoration: none;
@@ -9805,7 +9807,8 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #e9e9e9 !important;
+  color: #000 !important;
+  font-weight: 800;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -10124,6 +10127,7 @@ section.resume-section {
   max-width: 75rem;
 }
 section.resume-section .resume-section-content {
+  color: white;
   width: 100%;
 }
 
