@@ -6272,6 +6272,7 @@ a.close.disabled {
   margin: auto;
   align-items: center;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: 100%;
   opacity: 0.5;
 }
