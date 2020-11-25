@@ -85,6 +85,7 @@ body {
 
 .footer {
   position: fixed;
+  height: 2rem;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -10560,8 +10561,17 @@ p.lead {
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
-.social-icons .social-icon:hover {
-  background-color: #bd5d38;
+.social-icons .social-icon-linkedin:hover {
+  background-color: #4174b6;
+}
+.social-icons .social-icon-git:hover {
+  background-color: #000000;
+}
+.social-icons .social-icon-hackerrank:hover {
+  background-color: #52bb7a;
+}
+.social-icons .social-icon-mail:hover {
+  background-color: #000000;
 }
 
 .dev-icons {
