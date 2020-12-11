@@ -1,37 +1,50 @@
 body {
   background-color: whitesmoke;
-  background-color: rgb(22, 22, 26);
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: black;
 }
 
 .container {
   text-align: center;
 }
 .profile-pic {
-  margin-top: 5%;
   height: 200px;
   width: 200px;
   border-radius: 50%;
 }
-
+.theme-toggle {
+  display: inline;
+}
 .list {
   padding-left: 0;
+  display: inline;
 }
 .page-list-container li {
-  text-align: center;
   padding-left: 0pt;
   list-style-type: none;
   margin-bottom: 2vh;
+  display: inline;
 }
 .list-link {
-  border-radius: 5%;
+  font-size: large;
+  border-radius: 15px;
+  border: 2px solid;
+  padding: 10px;
   text-decoration: none;
-  color: aquamarine;
+  background-color: black;
+  color: white;
+}
+
+.about-content {
+  text-align: center;
 }
 .dark-mode {
-  background-color: white;
+  color: white;
+  background-color: rgb(22, 22, 26);
+}
+.dark-mode .list-link {
   color: black;
+  background-color: white;
 }
 
 /* The switch - the box around the slider */

@@ -4,30 +4,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mukul Sharma</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <label class="switch">
-        <input onclick="darkMode()" type="checkbox">
-        <span class="slider round"></span>
-    </label>
+    <div class="theme-toggle">
+        <label class="switch">
+            <input onclick="darkMode()" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <i class="fa fa-lightbulb-o" style="float: left;margin-right: 1vw;font-size: 34px;"></i>
+    </div>
     <div class="container">
         <img src="/assets/img/profile.png" alt="profile picture" class="profile-pic">
         <h1>Mukul Raj Sharma</h1>
         <div class="page-list-container">
             <ul class="list">
-                <li><a class="list-link" href="/about">About</a></li>
-                <li><a class="list-link" href="/education">Education</a></li>
-                <li><a class="list-link" href="/experience">Experience</a></li>
-                <li><a class="list-link" href="/projects">Projects</a></li>
-                <li><a class="list-link" href="/contact">Contact</a></li>
+                <li><a  href="/about"><button class="list-link">About</button></a></li>
+                <li><a  href="/education"><button class="list-link">Education</button></a></li>
+                <li><a  href="/experience"><button class="list-link">Experience</button></a></li>
+                <li><a  href="/projects"><button class="list-link">Projects</button></a></li>
+                <li><a  href="/contact"><button class="list-link">Contact</button></a></li>
             </ul>
         </div>
-        <div class="about-container">
-            <p>
-                This is all about me and my interests.
-            </p>
+        <div class="about-content">
+            <p>Hi, my name is (mentioned in BOLD above) and I am a penultimate year Computer engineering student at UNSW, Sydney</p>
         </div>
     </div>
+    
     <script type="text/javascript" src="/js/scripts.js"></script>
 </body>
 </html>
