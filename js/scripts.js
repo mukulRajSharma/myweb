@@ -41,7 +41,7 @@
     });
 })(jQuery); // End of use strict
 
-function darkMode (){
+function lightMode (){
     var element = document.body;
-    element.classList.toggle("dark-mode");
+    element.classList.toggle("light-mode");
 }
