@@ -150,7 +150,7 @@ h1 {
 .contact-form {
   border-radius: 5px;
   width: 90vw;
-  height: 80vh;
+  height: 75vh;
   margin-left: 5vw;
   margin-right: 5vw;
   background-color: aliceblue;
@@ -159,10 +159,12 @@ h1 {
 .contact-form-label {
   margin-top: 1vh;
   color: black;
+  border-bottom: 5px solid #00ffff;
 }
 .contact-form-input {
+  text-align: center;
   margin-top: 1vh;
-  background-color: paleturquoise;
+  background-color: pink;
   margin-bottom: 4vh;
   font-size: medium;
   border-radius: 5px;
