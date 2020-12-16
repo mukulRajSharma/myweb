@@ -31,6 +31,7 @@ h1 {
   background-size: cover;
 }
 .bulb {
+  position: relative;
   float: left;
   margin-right: 1vw;
   font-size: 34px;
@@ -153,18 +154,18 @@ h1 {
   height: 75vh;
   margin-left: 5vw;
   margin-right: 5vw;
-  background-color: aliceblue;
+  background-color: rgb(47, 51, 70);
   text-align: center;
 }
 .contact-form-label {
   margin-top: 1vh;
-  color: black;
+  color: whitesmoke;
   border-bottom: 5px solid #00ffff;
 }
 .contact-form-input {
   text-align: center;
   margin-top: 1vh;
-  background-color: pink;
+  background-color: white;
   margin-bottom: 4vh;
   font-size: medium;
   border-radius: 5px;
