@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html"; charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mukul Sharma</title>
     <link rel="stylesheet" href="/css/styles.css">
@@ -47,7 +48,7 @@
     </div>
     <div id="exp_section" class="exp-section">
         <h1>Experience</h1>
-        <ul>
+        <ul style="list-style-type: lower-greek;">
             <li>
                 <div class="exp-item-heading">
                         <h2>Head Teacher&nbsp;-&nbsp;CodeCamp<span style="float:right;font-size: medium;margin-right: 1vw;">April 2019 - Present</span></h2>
@@ -88,7 +89,7 @@
     </div>
     <div id="edu_section" class="edu-section">
         <h1>Education</h1>
-        <ul>
+        <ul style="list-style-type: lower-greek;">
             <li>
                 <div class="exp-item-heading">
                     <h2>UNIVERSITY OF NEW SOUTH WALES<span style="float:right;font-size: medium; margin-right: 1vw;">July 2018 - Present</span></h2>
@@ -105,7 +106,7 @@
             <br>
             <li>
                 <div class="exp-item-heading">
-                    <h2>K.R. MANGALAM WORLD SCHOOL, DELHI</h2>
+                    <h2>K.R. MANGALAM WORLD SCHOOL, DELHI<span style="float:right;font-size: medium; margin-right: 1vw;">April 2005 - May 2018</span></h2>
                     <h4>HSC Science (Physics, Chemistry, Mathematics, Computer Science)</h4>
                 </div>
                 <div class="exp-item-content">
@@ -117,7 +118,7 @@
             </li>
             <li>
                 <div class="exp-item-heading">
-                    <h2>SHORT COURSES</h2>
+                    <h2>SHORT COURSES<span style="float:right;font-size: medium; margin-right: 1vw;">Past - Future</span></h2>
                 </div>
                 <div class="exp-item-content">
                     <ul>
@@ -139,7 +140,28 @@
         </ul>
     </div>
     <div id="contact_section" class="contact-section">
-        <h1>Contacts</h1>
+        <h1>Contact</h1>
+        <div class="contact-form">
+            <form action="error.html" id="contact_form">
+                <label for="name" class="contact-form-label">Name</label><br>
+                <input name="name" id="name" class="contact-form-input" placeholder="your REAL name pls" style="width: 40vw;height: 4vh; text-align: center;"></input><br>
+
+                <label for="email" class="contact-form-label">Email</label><br>
+                <input type="email" id="email" class="contact-form-input" placeholder="your REAL email pls" style="width: 60vw;height: 4vh;text-align: center;"></input><br>
+
+                <label for="content" class="contact-form-label">Message</label><br>
+                <textarea form="contact_form" name="content" id="content" cols="30" rows="10" class="contact-form-input" placeholder="Hi, .. important stuff ..cheers!" style="height: 30vh;  width: 80vw; margin-bottom: 1vh;border-radius: 5px;"></textarea><br>
+
+                <label for="question" class="contact-form-label">Have we met? &#129320;</label>
+                <input type="radio" name="question" id="yes">
+                <label for="yes" style="color: green;">Yes</label>
+                <input type="radio" name="question" id="no">
+                <label for="no" style="color: red;">No</label><br>
+
+                <button type="submit" style="height: 30px;width:100px;margin-top: 2vh;font-size: medium;background-color: #0e76a8;color: white;">HIT ME</button>
+            </form>
+            
+        </div>
         
     </div>
     <div class="footer">
