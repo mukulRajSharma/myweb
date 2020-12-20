@@ -45,3 +45,21 @@ function lightMode (){
     var element = document.body;
     element.classList.toggle("light-mode");
 }
+function sendMail (){
+    alert("HIIIIIIII");
+    var name = document.getElementById("name").value;
+    var msg = document.getElementById("content").value;
+    submitOk = true;
+    if (name.length < 10)
+    {
+        alert("enter name plzz.");
+        submitOk=false;
+    }
+    if (msg.length < 10)
+    {
+        alert("c'mon at least 10 chars in the message.")
+        submitOk=false;
+    }
+    if (submitOk == false)
+        return false;
+}

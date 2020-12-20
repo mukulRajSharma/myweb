@@ -141,16 +141,16 @@
     </div>
     <div id="contact_section" class="contact-section">
         <h1>Contact</h1>
-        <div class="contact-form">
-            <form action="error.html" id="contact_form">
+        <div class="contact-form" id="contact_form">
+            <form id="contact_form">
                 <label for="name" class="contact-form-label">Name</label><br>
-                <input name="name" id="name" class="contact-form-input" placeholder="your REAL name pls" style="width: 40vw;height: 4vh;"></input><br>
+                <input name="name" id="name" class="contact-form-input" placeholder="your REAL name pls" style="width: 40vw;height: 4vh;" required></input><br>
 
                 <label for="email" class="contact-form-label">Email</label><br>
-                <input type="email" id="email" class="contact-form-input" placeholder="your REAL email pls" style="width: 60vw;height: 4vh;"></input><br>
+                <input type="email" id="email" class="contact-form-input" placeholder="your REAL email pls" style="width: 60vw;height: 4vh;" required></input><br>
 
                 <label for="content" class="contact-form-label">Message</label><br>
-                <textarea form="contact_form" name="content" id="content" cols="30" rows="10" class="contact-form-input" placeholder="Hi, .. important stuff ..cheers!" style="height: 30vh;  width: 80vw;"></textarea><br>
+                <textarea form="contact_form" name="content" id="content" cols="30" rows="10" class="contact-form-input" placeholder="Hi, .. important stuff ..cheers!" style="height: 30vh;  width: 80vw;" required></textarea><br>
 
                 <label for="question" style="color: whitesmoke;">Have we met? &#129320;</label>
                 <input type="radio" name="question" id="yes">
@@ -158,7 +158,7 @@
                 <input type="radio" name="question" id="no">
                 <label for="no" style="color: whitesmoke;">No</label><br>
 
-                <button type="submit" style="border-radius: 5px;border-color: paleturquoise;border-width: 5px;height: 30px;width:100px;margin-top: 2vh;font-size: medium;background-color: #0e76a8;color: white;">HIT ME</button>
+                <button onclick="sendmMail()" style="border-radius: 5px;border-color: paleturquoise;border-width: 5px;height: 30px;width:100px;margin-top: 2vh;font-size: medium;background-color: #0e76a8;color: white;">HIT ME</button>
             </form>
             
         </div>
