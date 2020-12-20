@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: black;
+  background-color: rgb(33, 35, 47);
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   margin: 0;
@@ -154,7 +154,7 @@ h1 {
   height: 75vh;
   margin-left: 5vw;
   margin-right: 5vw;
-  background-color: rgb(47, 51, 70);
+  background-color: rgb(93, 140, 165);
   text-align: center;
 }
 .contact-form-label {

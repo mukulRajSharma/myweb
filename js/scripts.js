@@ -46,11 +46,10 @@ function lightMode (){
     element.classList.toggle("light-mode");
 }
 function sendMail (){
-    alert("HIIIIIIII");
     var name = document.getElementById("name").value;
     var msg = document.getElementById("content").value;
     submitOk = true;
-    if (name.length < 10)
+    if (name.length < 10) 
     {
         alert("enter name plzz.");
         submitOk=false;

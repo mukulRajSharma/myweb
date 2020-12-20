@@ -139,31 +139,56 @@
             </li>
         </ul>
     </div>
-    <div id="contact_section" class="contact-section">
+    <div class="contact-section" id="contact_section">
         <h1>Contact</h1>
         <div class="contact-form" id="contact_form">
-            <form id="contact_form">
-                <label for="name" class="contact-form-label">Name</label><br>
-                <input name="name" id="name" class="contact-form-input" placeholder="your REAL name pls" style="width: 40vw;height: 4vh;" required></input><br>
+            <form action="https://postmail.invotes.com/send" method="post" id="email_form">
 
-                <label for="email" class="contact-form-label">Email</label><br>
-                <input type="email" id="email" class="contact-form-input" placeholder="your REAL email pls" style="width: 60vw;height: 4vh;" required></input><br>
-
-                <label for="content" class="contact-form-label">Message</label><br>
-                <textarea form="contact_form" name="content" id="content" cols="30" rows="10" class="contact-form-input" placeholder="Hi, .. important stuff ..cheers!" style="height: 30vh;  width: 80vw;" required></textarea><br>
-
-                <label for="question" style="color: whitesmoke;">Have we met? &#129320;</label>
-                <input type="radio" name="question" id="yes">
-                <label for="yes" style="color: whitesmoke;">Yes</label>
-                <input type="radio" name="question" id="no">
-                <label for="no" style="color: whitesmoke;">No</label><br>
-
-                <button onclick="sendmMail()" style="border-radius: 5px;border-color: paleturquoise;border-width: 5px;height: 30px;width:100px;margin-top: 2vh;font-size: medium;background-color: #0e76a8;color: white;">HIT ME</button>
-            </form>
+                <input type="text" class="contact-form-input" name="subject" placeholder="Subject" style="width: 40vw;height: 4vh;" required/><br>
+                <!-- set the reply-to address -->
+                <input type="email" class="contact-form-input" name="extra_reply_to" placeholder="Your Email" style="width: 60vw;height: 4vh;" required /><br> 
+                <textarea name="text" class="contact-form-input" placeholder="Message" style=" font-family: Arial, Helvetica, sans-serif;height: 30vh;  width: 60vw;" required></textarea><br>
+                <input type="hidden" name="access_token" value="5s8d1fqnttq6f5pj5zy762b6" />
+                <!-- return urls can be fully qualified -OR-
+                    start with / for root relative -OR-
+                    start with . for url relative --> 
+                <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
             
+        
+                
+        
+                <!-- to append extra fields, use the extra_ prefix.
+                    Entries will be appended to your message body. -->
+                <!-- <input type="text" name="extra_phone_number"
+                            placeholder="Phone Number" /> -->
+        
+                <!-- to split your message into 160 chars
+                    for an sms gateway -->
+                <!-- <input type="hidden"
+                            name="sms_format" value="true" /> -->
+            
+                <input id="submit_form" type="submit" value="Send" style="border-radius: 5px;height: 50px;width: 50px;background-color: #000000;color: white;" />
+                <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+                <p style="color: azure;">Powered by <a href="https://postmail.invotes.com" target="_blank" style="color: #08d467;">PostMail</a></p>
+            </form>
         </div>
         
+            
+        <!-- optional, prevents the submit button from being pressed more than once -->
+        <script>
+            var submitButton = document.getElementById("submit_form");
+            var form = document.getElementById("email_form");
+            form.addEventListener("submit", function (e) {
+                setTimeout(function() {
+                    submitButton.value = "Sending...";
+                    submitButton.disabled = true;
+                }, 1);
+            });
+        </script> 
     </div>
+    
+
     <div class="footer">
         Made with HTML, CSS, Js and (<span>☕</span>+<span style="color: red;">&#x2764</span>)
     </div>
