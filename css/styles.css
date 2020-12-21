@@ -130,6 +130,7 @@ body {
   perspective: 700px;
   height: 300px;
   width: 350px;
+  box-shadow: 0 8px 6px -6px lightskyblue;
 }
 
 .card-flip,
