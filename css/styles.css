@@ -125,56 +125,62 @@ body {
   display: inline-flex;
   margin: 10;
 }
-.card-container {
-  display: grid;
+/* flip the pane when hovered */
+
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
   perspective: 700px;
   height: 300px;
   width: 350px;
   box-shadow: 0 8px 6px -6px lightskyblue;
 }
-
-.card-flip,
-.card-container {
-  transform-style: preserve-3d;
-  transition: all 0.7s ease;
-}
-
-.card-flip div {
+.flipper div {
   backface-visibility: hidden;
   transform-style: preserve-3d;
+  border-radius: 10;
 }
+/* flip speed */
 
-.back {
-  transform: rotateY(-180deg);
-}
-
-.card-container:hover,
-.card-container:active .card-flip {
-  transform: rotateY(180deg);
-}
-
-.card-flip {
-  display: grid;
-  grid-template: 1fr / 1fr;
-  grid-template-areas: "frontAndBack";
+.flipper {
+  transition: 0.8s;
   transform-style: preserve-3d;
-  transition: all 0.7s ease;
+  position: relative;
 }
-.front {
-  grid-area: frontAndBack;
-  background-color: lightsalmon;
+
+/* hide back of pane during swap */
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
   border-radius: 10px;
-  padding: 5;
 }
-.front h2 {
+
+/* front pane, placed above back */
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+  background-color: lightsalmon;
+}
+.front h2,
+p {
   color: black;
 }
+
+/* back, initially hidden pane */
+
 .back {
-  grid-area: frontAndBack;
-  transform: rotateY(-180deg);
-  background-color: lightskyblue;
-  border-radius: 10px;
-  padding: 10;
+  transform: rotateY(180deg);
+  background-color: lightblue;
+  color: black;
 }
 
 .edu-section {
@@ -247,7 +253,7 @@ body {
 
 .footer {
   position: relative;
-  background-color: paleturquoise;
+  background-color: lightsteelblue;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -271,7 +277,8 @@ body {
   font-size: 34px;
   color: black;
 }
-.light-mode .front h2 {
+.light-mode .front h2,
+p {
   color: white;
 }
 
