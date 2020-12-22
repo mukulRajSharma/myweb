@@ -198,14 +198,13 @@ p {
   text-align: center;
 }
 .edu-item-heading h2 {
+  margin-bottom: 0;
+  border: 2px solid lightskyblue;
+  border-radius: 10px;
 }
 .edu-item-content {
   margin-left: 10%;
   text-align: left;
-}
-.edu-item-heading h2 {
-  margin-bottom: 0;
-  border: 2px solid lightskyblue;
 }
 .edu-item-heading h4 {
   margin-top: 0;
