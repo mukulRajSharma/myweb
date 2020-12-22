@@ -297,7 +297,9 @@ p {
 .light-mode .edu-item-content p {
   color: black;
 }
-
+.light-mode .contact-form p {
+  color: black;
+}
 /* The switch - the box around the slider */
 .switch {
   position: relative;
