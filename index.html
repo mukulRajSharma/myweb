@@ -165,14 +165,15 @@
     <div class="contact-section" id="contact_section">
         <h1>Contact</h1>
         <div class="contact-form" id="contact_form">
-            <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+            <form name="cForm" action="https://postmail.invotes.com/send" method="post" id="email_form" onsubmit="return validateForm()">
 
                 <input type="text" class="contact-form-input" name="subject" placeholder="Subject" style="width: 40vw;height: 4vh;" required/><br>
                 <!-- set the reply-to address -->
                 <input type="email" class="contact-form-input" name="extra_reply_to" placeholder="Your Email" style="width: 60vw;height: 4vh;" required /><br> 
+                
                 <textarea name="text" class="contact-form-input" placeholder="Message" style=" font-family: Arial, Helvetica, sans-serif;height: 30vh;  width: 60vw;" required></textarea><br>
                 <input type="hidden" name="access_token" value="5s8d1fqnttq6f5pj5zy762b6" />
-
+                <input type="hidden" name="extra_ip" value=""/>
                 <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
                 <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
                 
