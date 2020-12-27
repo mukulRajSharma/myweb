@@ -20,7 +20,9 @@ function flipCard(){
 function validateForm (){
 
     fetch('https://api.ipify.org/?format=json')
-    .then(results => { document.forms["cForm"]["extra_ip"].value=( JSON.stringify(results.json() )) });
+    .then(results => results.json())
+    .then(data => sIp = data.ip)
+    .then(() => console.log(sIp));
     
     var subject = document.forms["cForm"]["subject"].value;
     subject = subject.replace(/\s+/g, '');

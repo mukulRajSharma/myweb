@@ -165,23 +165,15 @@
     <div class="contact-section" id="contact_section">
         <h1>Contact</h1>
         <div class="contact-form" id="contact_form">
-            <form name="cForm" action="https://postmail.invotes.com/send" method="post" id="email_form" onsubmit="return validateForm()">
-
+            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                <p class="hidden">
+                  <input name="bot-field" class="contact-form-input" style="margin: 0;" placeholder="only for the the bots ;)" />
+                </p>
                 <input type="text" class="contact-form-input" name="subject" placeholder="Subject" style="width: 40vw;height: 4vh;" required/><br>
-                <!-- set the reply-to address -->
-                <input type="email" class="contact-form-input" name="extra_reply_to" placeholder="Your Email" style="width: 60vw;height: 4vh;" required /><br> 
-                
+                <input type="email" class="contact-form-input" name="email" placeholder="Your Email" style="width: 60vw;height: 4vh;" required /><br>
                 <textarea name="text" class="contact-form-input" placeholder="Message" style=" font-family: Arial, Helvetica, sans-serif;height: 30vh;  width: 60vw;" required></textarea><br>
-                <input type="hidden" name="access_token" value="5s8d1fqnttq6f5pj5zy762b6" />
-                <input type="hidden" name="extra_ip" value=""/>
-                <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
-                <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
-                
-                <button id="submit_form" type="submit" value="Send" class="contact-form-button">Send</button>
-                <!-- <input id="submit_form" type="submit" value="Send" class="contact-form-button" /> -->
-                <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
-                <p>Powered by <a href="https://postmail.invotes.com" target="_blank" style="color: #08d467;">PostMail</a></p>
-            </form>
+                <button id="submit_form" type="submit" class="contact-form-button">Send</button>
+              </form>
         </div>
         
             
