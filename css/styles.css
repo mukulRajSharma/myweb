@@ -8,6 +8,24 @@ body {
   margin: 0;
   cursor: crosshair;
 }
+/* Just for the palceholders to be in the center even if txt is left aligned */
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
 
 .line {
   height: 5vh;
