@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miscellaneous</title>
+</head>
+<body>
+    <h1>Random stuff:</h1>
+    <button onclick="myFunction('recommendations')" style="border-radius: 10px;"><h2>Recommendations</h2></button>
+    <button onclick="myFunction('quotes')" style="border-radius: 10px;"><h2>Quotes</h2></button>
+    <div id="recommendations" style="display: none;">
+        <h2>Comedian</h2>
+        <p>
+            <a href="https://www.youtube.com/c/JamesAcaster" target="_blank">James Acaster</a>, this dude is a national treasure for Britain.<br>
+        </p>
+        <h2>Software/hardware engineer/ Entrepreneur/ koolest dude</h2>
+        <p>
+            <a href="https://geohot.com/" target="_blank">George Hotz</a>, he knows a lot and applies a lot of what he knows into his work.<br>
+        </p>
+        <h2>Musician/ Singer/ Guitarist <3 </h2>
+        <p>
+            <a href="https://johnmayer.com/" target="_blank">John Mayer</a>, ik ik, he is a big shot but I beleive he is still underrated. For me he is the best guitarist of the 2000's-2010's-Future.
+        </p>
+    </div>
+    
+    <div id="quotes" style="display: none;">
+        <ul style="list-style: upper-roman;">
+            <li>Trust but verify.</li>
+            <li>Be afraid but do it anyway.</li>
+            <li>If little is good, more must be better. (not sure about this one)</li>
+            <li>You can't smoke while praying but it's permissable to pray while smoking.</li>
+            <li>It's simple to be happy, but it's so difficult to be simple.</li>
+            <li>Do as I say, don't do as I do.</li>
+            <li>If you're breathing you are achieving.</li>
+            <li>When youth departs may wisdom prove enough.</li>
+        </ul>
+        <ul style="list-style: upper-roman;">
+            Not Quotes but almost:
+            <br>
+            <br>
+            <li>Early bird gets the worm but the late worm does not get eaten by the early bird.</li>
+            <li>We don't make mistakes, we make adjustments.</li>
+            <li>Be kind, for everyone you meet is fighting a battle.</li>
+            <li>I did not have the time to write a short letter so I wrote a long one instead.</li>
+            <li>I spent half my money on whiskey and the rest I wasted.</li>
+            <li></li>
+            <br>
+            suggestions? <a href="/#contact_section">Send here!</a>
+        </ul>
+    </div>
+
+    <script>
+        function myFunction(y) {
+            var x = document.getElementById(y);
+            if (x.style.display === "none") {
+            x.style.display = "block";
+            } else {
+            x.style.display = "none";
+            }
+        }
+      </script>
+    
+</body>
+</html>
