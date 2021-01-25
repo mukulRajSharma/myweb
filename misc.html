@@ -6,8 +6,8 @@
 </head>
 <body>
     <h1>Random stuff:</h1>
-    <button onclick="myFunction('recommendations')" style="border-radius: 10px;"><h2>Recommendations</h2></button>
-    <button onclick="myFunction('quotes')" style="border-radius: 10px;"><h2>Quotes</h2></button>
+    <button id="recommendations-button" onclick="myFunction('recommendations')" style="border-radius: 10px; background-color: lightsalmon;"><h2>Recommendations</h2></button>
+    <button id="quotes-button" onclick="myFunction('quotes')" style="border-radius: 10px; background-color: lightsalmon;"><h2>Quotes</h2></button>
     <div id="recommendations" style="display: none;">
         <h2>Comedian</h2>
         <p>
@@ -52,10 +52,15 @@
     <script>
         function myFunction(y) {
             var x = document.getElementById(y);
+            var b = document.getElementById(y+'-'+'button')
             if (x.style.display === "none") {
-            x.style.display = "block";
+                x.style.display = "block";
+                b.style.backgroundColor = "lightskyblue";
+                b.style.boxShadow='5px 10px #888888';
             } else {
-            x.style.display = "none";
+                x.style.display = "none";
+                b.style.backgroundColor = "lightsalmon";
+                b.style.boxShadow='0 0 0';
             }
         }
       </script>
