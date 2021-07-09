@@ -3,6 +3,7 @@ html {
 }
 body {
   background-color: rgb(33, 35, 47);
+  background-color: #002b36;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   margin: 0;
@@ -284,7 +285,7 @@ p {
 
 .light-mode {
   color: black;
-  background-color: white;
+  background-color: #fdf6e3;
 }
 .light-mode .description p {
   color: black;
