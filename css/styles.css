@@ -207,8 +207,8 @@ p {
 .edu-section {
   min-height: 100%;
   margin: 10;
-  background-color: linen;
   border-radius: 20px;
+  background-color: steelblue;
   width: 80vw;
   margin-left: 10vw;
 }
@@ -320,6 +320,9 @@ p {
 }
 .light-mode .contact-form p {
   color: black;
+}
+.light-mode .edu-section {
+  background-color: lightsteelblue;
 }
 /* The switch - the box around the slider */
 .switch {
