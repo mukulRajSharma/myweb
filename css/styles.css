@@ -207,17 +207,22 @@ p {
 .edu-section {
   min-height: 100%;
   margin: 10;
+  background-color: linen;
+  border-radius: 20px;
+  width: 80vw;
+  margin-left: 10vw;
 }
 .edu-section h1 {
   text-align: center;
 }
 .edu-item {
-  text-align: center;
+  /* text-align: center; */
+  padding-left: 5%;
 }
 .edu-item-heading h2 {
   margin-bottom: 0;
-  border: 2px solid lightskyblue;
-  border-radius: 10px;
+  /* border: 2px solid lightskyblue;
+  border-radius: 10px; */
 }
 .edu-item-content {
   margin-left: 10%;
