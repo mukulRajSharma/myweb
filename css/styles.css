@@ -205,7 +205,7 @@ p {
 }
 
 .edu-section {
-  min-height: 100%;
+  /* min-height: 100%; */
   margin: 10;
   border-radius: 20px;
   background-color: steelblue;
