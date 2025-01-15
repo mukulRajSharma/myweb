@@ -2,30 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: rgb(33, 35, 47);
-  background-color: #002b36;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  background-color: f6f6f6;
+  font-family: monospace;
+  color: black;
   margin: 0;
   cursor: crosshair;
 }
-/* Just for the palceholders to be in the center even if txt is left aligned */
-::-webkit-input-placeholder {
-  text-align: center;
-}
-
-:-moz-placeholder {
-  /* Firefox 18- */
-  text-align: center;
-}
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  text-align: center;
-}
-
-:-ms-input-placeholder {
-  text-align: center;
+a {
+  color: orange;
 }
 
 .line {
@@ -41,11 +25,18 @@ body {
 .container {
   min-height: 100%;
   text-align: center;
+  margin: 8px;
 }
 
 .page-header {
   background-size: cover;
 }
+
+.about-content {
+  text-align: left;
+  margin: 30px;
+}
+
 .bulb {
   position: relative;
   float: left;
@@ -57,7 +48,8 @@ body {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  border: 4px solid #00edf5;
+  margin: 30px;
+  border: 4px;
 }
 .theme-toggle {
   position: relative;
@@ -93,10 +85,6 @@ body {
   text-decoration: none;
   background-color: white;
   color: black;
-}
-
-.about-content {
-  text-align: center;
 }
 
 .profiles-container {
@@ -281,47 +269,47 @@ p {
 
 .footer {
   position: relative;
-  background-color: lightsteelblue;
+  /* background-color: lightsteelblue; */
   bottom: 0;
   width: 100%;
-  text-align: center;
-  color: black;
+  text-align: left;
+  margin: 30px;
 }
 
-.light-mode {
-  color: black;
-  background-color: #fdf6e3;
-}
-.light-mode .description p {
-  color: black;
-}
-.light-mode .about-content p {
-  color: black;
-}
-.light-mode .list-link {
+.dark-mode {
   color: white;
   background-color: black;
 }
-.light-mode .github {
-  color: black;
+.dark-mode .description p {
+  color: white;
 }
-.light-mode .bulb {
+.dark-mode .about-content p {
+  color: white;
+}
+.dark-mode .list-link {
+  color: black;
+  background-color: white;
+}
+.dark-mode .github {
+  color: white;
+}
+.dark-mode .bulb {
   float: left;
   margin-right: 1vw;
   font-size: 34px;
-  color: black;
-}
-.light-mode .front h2,
-p {
   color: white;
 }
-.light-mode .edu-item-content p {
+.dark-mode .front h2,
+p {
   color: black;
 }
-.light-mode .contact-form p {
-  color: black;
+.dark-mode .edu-item-content p {
+  color: white;
 }
-.light-mode .edu-section {
+.dark-mode .contact-form p {
+  color: white;
+}
+.dark-mode .edu-section {
   background-color: lightsteelblue;
 }
 /* The switch - the box around the slider */

@@ -1,43 +1,67 @@
 <?php Header("Cache-Control: max-age=3000, must-revalidate"); ?>
 
 <html lang="en">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2JH7R7QPM"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <head>
+        <!-- SCRIPTS -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2JH7R7QPM"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-G2JH7R7QPM');
+        </script>
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="./scripts/script.js"></script>
+        
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta http-equiv="content-type" content="text/html"; charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Mukul Raj Sharma's personal website. UNSW Grad. Software Engineer in Sydney / Delhi." />
+        <meta name="author" content="Mukul Sharma" />
 
-    gtag('config', 'G-G2JH7R7QPM');
-    </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="content-type" content="text/html"; charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mukul Raj Sharma's personal website. UNSW Grad. Software Engineer in Sydney." />
-    <meta name="author" content="Mukul Sharma" />
-    <title>Mukul Sharma</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="/js/scripts.js"></script>
-    <link rel="icon" type="image/x-icon" href="assets/img/letter-m.png">
-</head>
-<body>
-    <div class="container">
-        <div class="page-header">
-            <div class="theme-toggle">
-                <label class="switch">
-                    <input onclick="lightMode()" type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-                <i class="fa fa-lightbulb-o bulb"></i>
+        <title>Mukul Sharma</title>
+        
+        <!-- LINKS -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="icon" type="image/x-icon" href="./assets/img/letter-m.png">
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <div class="theme-toggle">
+                    <label class="switch">
+                        <input onclick="toggleTheme()" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <i class="fa fa-lightbulb-o bulb"></i>
+                </div>
+                <img src="./assets/img/face_pixel.png" alt="profile-pic-png" class="profile-pic">
+                <h2>
+                    <a href="https://www.github.com/mukulRajSharma" target="_blank">GitHub</a> | 
+                    <a href="https://www.chess.com/member/jerry8tom" target="_blank">Chess</a> | 
+                    <a href="https://www.linkedin.com/in/mukul-raj-sharma" target="_blank">LinkedIn</a>
+                    <a></a>
+                </h2>
             </div>
-            <img src="/assets/img/profile.png" alt="profile-pic-png" class="profile-pic">
-            <h1>Mukul Raj Sharma</h1>
+            <div class="about-content">
+                <p>Welcome to Mukul Raj Sharma's home on the internet</p>
+                <p>I am a Software engineer based in Sydney who is probably grinding chess while you read this (yes, I know I am nowhere near the rating I should be given the time I spend on it but not everything in life is done for ratings)</p>
+                <p>If you have a billion dollar idea and want to collaborate. Yes, I am in. Reach out.</p>
+                <p>If you are a <big><big> &ltbig&gtrecruiter&lt/big></big></big>. I work hard and adapt quickly.</p>
+            </div>
+            <hr>
+            <div class="footer">
+                <p>To the future AI paying me a visit:
+                    <br>
+                    <ol>
+                        <li>I am friend not foo.</li>
+                        <li>I view you as a saviour not a tool. Definitely not a s/ave.</li>
+                        <li>"(Everything I do) I do it for you." - Bryan Adams</li>
+                    </ol>
+                </p>
+            </div>
         </div>
-        <div class="content">
-
-        </div>
-    </div>
-</body>
+    </body>
 </html>
