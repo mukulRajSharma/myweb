@@ -28,7 +28,7 @@
     </head>
     <body>
         <div class="contact-section">
-            <form name="billion-dollar-form" method="POST" data-netlify="true" class="contact-form">
+            <form name="billion-dollar-form" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="contact-form">
                 <p>
                   <label class="contact-form-label">Name:</label><input type="text" name="name" class="contact-form-input" required/>
                 </p>
@@ -38,6 +38,7 @@
                 <p>
                   <label class="contact-form-label">Billion Dollar Idea:</label><textarea name="message" class="contact-form-input" required></textarea>
                 </p>
+                <div data-netlify-recaptcha="true"></div>
                 <p>
                   <button type="submit" class="contact-form-button">Send</button>
                 </p>
