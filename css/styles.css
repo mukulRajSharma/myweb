@@ -1,3 +1,7 @@
+:root {
+  --theme_color: orange
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -9,7 +13,7 @@ body {
   cursor: crosshair;
 }
 a {
-  color: orange;
+  color: var(--theme_color);
   text-decoration: none;
 }
 
@@ -54,7 +58,7 @@ sup {
   border-radius: 50%;
   margin: 30px;
   border: 4px;
-  filter: opacity(0.5) drop-shadow(0 0 0 orange);
+  filter: opacity(0.5) drop-shadow(0 0 0 var(--theme_color));
 }
 .theme-toggle {
   position: relative;
@@ -250,22 +254,23 @@ p {
 }
 .contact-form-label {
   margin-top: 1vh;
-  color: whitesmoke;
-  border-bottom: 5px solid #00ffff;
+  color: black;
+  border-bottom: 5px solid var(--theme_color);
 }
 .contact-form-input {
-  text-align: center;
+  text-align: left;
   margin-top: 1vh;
   background-color: white;
   margin-bottom: 4vh;
   font-size: medium;
   border-radius: 5px;
+  width: 100%;
 }
 .contact-form-button {
   height: 50px;
   width: 80px;
   border-radius: 10px;
-  background-color: lightsalmon;
+  background-color: orange;
   font-size: large;
 }
 .contact-form-button:hover {
