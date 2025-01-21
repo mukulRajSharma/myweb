@@ -10,8 +10,12 @@ body {
 }
 a {
   color: orange;
+  text-decoration: none;
 }
 
+sup {
+  color: red;
+}
 .line {
   height: 5vh;
   width: 0.5vw;
@@ -279,7 +283,7 @@ p {
 
 .dark-mode {
   color: white;
-  background-color: black;
+  background-color: #073642;
 }
 .dark-mode .description p {
   color: white;
@@ -288,8 +292,8 @@ p {
   color: white;
 }
 .dark-mode .list-link {
-  color: black;
-  background-color: white;
+  color: white;
+  /* background-color: white; */
 }
 .dark-mode .github {
   color: white;
@@ -300,19 +304,7 @@ p {
   font-size: 34px;
   color: white;
 }
-.dark-mode .front h2,
-p {
-  color: black;
-}
-.dark-mode .edu-item-content p {
-  color: white;
-}
-.dark-mode .contact-form p {
-  color: white;
-}
-.dark-mode .edu-section {
-  background-color: lightsteelblue;
-}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
