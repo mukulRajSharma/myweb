@@ -1,6 +1,8 @@
 :root {
   --theme_color: orange;
   --theme_highlight: red;
+  --theme_background: #f6f6f6;
+  --dark_theme_background: #073642;
 }
 
 html {
@@ -8,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #f6f6f6;
+  background-color:var(--theme_background)
   font-family: monospace;
   color: black;
   margin: 0;
@@ -29,6 +31,10 @@ sup {
   color: var(--theme_highlight);
 }
 
+p {
+  color: white;
+}
+
 .line {
   height: 5vh;
   width: 0.5vw;
@@ -47,6 +53,9 @@ sup {
 
 .page-header {
   background-size: cover;
+}
+.page-header span {
+  color: black;
 }
 
 .about-content {
@@ -247,18 +256,17 @@ p {
 }
 
 .contact-section {
-  margin: 10;
+  margin: auto;
   min-height: 100%;
 }
 .contact-section h1 {
   text-align: center;
 }
 .contact-form {
-  border-radius: 5px;
   width: 90vw;
   height: 75vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 3vw;
+  /* margin-right: 5vw; */
   text-align: center;
 }
 .contact-form-label {
@@ -274,9 +282,11 @@ p {
   font-size: medium;
   border-radius: 5px;
   width: 100%;
+  border-style: solid;
+  border-width: 4;
 }
 .contact-form-button {
-  height: 50px;
+  height: 40px;
   width: 80px;
   border-radius: 10px;
   background-color: orange;
@@ -297,7 +307,7 @@ p {
 
 .dark-mode {
   color: white;
-  background-color: #073642;
+  background-color: var(--dark_theme_background);
 }
 .dark-mode .description p {
   color: white;
@@ -316,6 +326,12 @@ p {
   float: left;
   margin-right: 1vw;
   font-size: 34px;
+  color: white;
+}
+.dark-mode label {
+  color: white;
+}
+.dark-mode .page-header span {
   color: white;
 }
 
@@ -380,4 +396,12 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.header-logo {
+  width: 50px;
+  height: 50px;
+  background-color: var(--theme_background);
+  border-radius: 50%;
+  border
 }
