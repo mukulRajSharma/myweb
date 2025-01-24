@@ -4,31 +4,6 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
  */
 
-// const buttons = document.querySelectorAll('.mode-toggle')
-
-// buttons.forEach(button => {
-//   button.addEventListener('click', function () {
-//     document.body.classList.toggle('light-mode')
-//     document.querySelectorAll('.fa-sun').forEach(icon => icon.classList.toggle('fa-moon'))
-
-//     if (document.body.classList.contains('light-mode')) {
-//       localStorage.setItem('lightMode', 'enabled')
-//     } else {
-//       localStorage.setItem('lightMode', 'disabled')
-//     }
-//   })
-// })
-
-// if (localStorage.getItem('lightMode') === 'enabled') {
-//   document.body.classList.add('light-mode')
-//   document.querySelectorAll('.fa-sun').forEach(icon => icon.classList.add('fa-moon'))
-// }
-
-// $(".flip-container .flipper").click(function () {
-//   $(this).closest(".flip-container").toggleClass("hover");
-//   $(this).css("transform, rotateY(180deg)");
-// });
-// localStorage.setItem("darkMode", "disabled")
 function toggleTheme() {
   var element = document.body;
   localStorage.setItem("darkMode", (localStorage.getItem("darkMode") === "enabled") ? "disabled" : "enabled");
@@ -38,15 +13,12 @@ function toggleTheme() {
 }
 
 function checkLightMode() {
-  console.log(localStorage.getItem("darkMode"));
   if (localStorage.getItem("darkMode") === "enabled") {
-    console.log('check enable')
     document.getElementById("theme-check-box").checked = true
     var element = document.body;
     element.classList.toggle("dark-mode");
     document.getElementById("test").src="/assets/icons/sun.svg";
   } else {
-    console.log('check disable')
     localStorage.setItem("darkMode", "disabled");
     document.getElementById("theme-selector").src="/assets/icons/moon.svg";
   }
