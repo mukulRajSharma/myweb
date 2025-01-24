@@ -34,6 +34,7 @@ function toggleTheme() {
   localStorage.setItem("darkMode", (localStorage.getItem("darkMode") === "enabled") ? "disabled" : "enabled");
   document.getElementById("theme-check-box").checked = (localStorage.getItem("darkMode") === "enabled") ? true : false;
   element.classList.toggle("dark-mode");
+  document.getElementById("theme-selector").src=(localStorage.getItem("darkMode") === "enabled") ? "/assets/icons/sun.svg" : "/assets/icons/moon.svg";
 }
 
 function checkLightMode() {
@@ -43,9 +44,11 @@ function checkLightMode() {
     document.getElementById("theme-check-box").checked = true
     var element = document.body;
     element.classList.toggle("dark-mode");
+    document.getElementById("test").src="/assets/icons/sun.svg";
   } else {
     console.log('check disable')
     localStorage.setItem("darkMode", "disabled");
+    document.getElementById("theme-selector").src="/assets/icons/moon.svg";
   }
 }
 
