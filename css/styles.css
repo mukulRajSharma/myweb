@@ -1,8 +1,13 @@
 :root {
-  --theme_color: orange;
+  --theme_color: black;
+  --theme_alt: #76ABAE;
   --theme_highlight: red;
-  --theme_background: #f6f6f6;
-  --dark_theme_background: #073642;
+  --theme_background: #EEEEEE;
+
+  --dark_theme_color: #EEEEEE;
+  --dark_theme_alt: #76ABAE;
+  --dark_theme_highlight: red;
+  --dark_theme_background: #31363F;
 }
 
 html {
@@ -10,7 +15,7 @@ html {
 }
 
 body {
-  background-color:var(--theme_background)
+  background-color:var(--theme_background);
   font-family: monospace;
   color: black;
   margin: 0;
@@ -18,7 +23,7 @@ body {
 }
 
 a {
-  color: var(--theme_color);
+  color: var(--theme_alt);
   text-decoration: none;
 }
 a:hover {
@@ -35,14 +40,8 @@ p {
   color: white;
 }
 
-.line {
-  height: 5vh;
-  width: 0.5vw;
-  background-color: lightskyblue;
-  display: inline-block;
-  margin-left: 1vw;
-  margin-right: 0.5vw;
-  vertical-align: middle;
+.alt-txt {
+  color: var(--theme_alt);
 }
 
 .container {
@@ -76,7 +75,7 @@ p {
   border-radius: 50%;
   margin: 30px;
   border: 4px;
-  filter: opacity(0.5) drop-shadow(0 0 0 var(--theme_color));
+  filter: opacity(0.5) drop-shadow(0 0 0 var(--theme_alt));
 }
 .theme-toggle {
   position: relative;
@@ -272,7 +271,7 @@ p {
 .contact-form-label {
   margin-top: 1vh;
   color: black;
-  border-bottom: 5px solid var(--theme_color);
+  border-bottom: 5px solid var(--theme_alt);
 }
 .contact-form-input {
   text-align: left;
@@ -289,7 +288,7 @@ p {
   height: 40px;
   width: 80px;
   border-radius: 10px;
-  background-color: orange;
+  background-color: var(--theme_alt);
   font-size: large;
 }
 .contact-form-button:hover {
@@ -306,7 +305,7 @@ p {
 }
 
 .dark-mode {
-  color: white;
+  color: var(--dark_theme_color);
   background-color: var(--dark_theme_background);
 }
 .dark-mode .description p {
@@ -333,6 +332,15 @@ p {
 }
 .dark-mode .page-header span {
   color: white;
+}
+.dark-mode a {
+  color: var(--dark_theme_alt);
+}
+.dark-mode .alt-txt {
+  color: var(--dark_theme_alt);
+}
+.dark-mode .contact-form-button {
+  background-color: var(--dark_theme_alt);
 }
 
 /* The switch - the box around the slider */
