@@ -1,93 +1,68 @@
 <?php Header("Cache-Control: max-age=3000, must-revalidate"); ?>
 
 <html lang="en">
-  <head>
-    <!-- SCRIPTS -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-G2JH7R7QPM"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-G2JH7R7QPM");
-    </script>
-    <script src="/scripts/formSubmit.js"></script>
-    <script src="/scripts/script.js"></script>
-    <!-- META -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="content-type" content="text/html" ; charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Mukul Raj Sharma's personal website. UNSW Grad. Software Engineer in Sydney / Delhi."
-    />
-    <meta name="author" content="Mukul Raj Sharma" />
 
-    <title>Mukul Raj Sharma</title>
+<head>
+  <!-- SCRIPTS -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2JH7R7QPM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-G2JH7R7QPM");
+  </script>
+  <script src="/scripts/formSubmit.js"></script>
+  <script src="/scripts/script.js"></script>
+  <!-- META -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="content-type" content="text/html" ; charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Mukul Raj Sharma's personal website. UNSW Grad. Software Engineer in Sydney / Delhi." />
+  <meta name="author" content="Mukul Raj Sharma" />
 
-    <!-- LINKS -->
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/icons/m-icon.png" />
-  </head>
-  <body onload="checkLightMode()">
-    <div class="container">
-      <div class="page-header">
-        <div class="theme-toggle">
-          <label class="switch">
-            <input
-              onclick="toggleTheme()"
-              type="checkbox"
-              id="theme-check-box"
-            />
-            <img src="/assets/icons/sun.svg" id="theme-selector" class="theme-selector">
-          </label>
-        </div>
-      </div>
-      <div class="contact-section">
-        <form
-          name="billion-dollar-form"
-          method="POST"
-          data-netlify="true"
-          data-netlify-recaptcha="true"
-          class="contact-form"
-        >
-          <p>
-            <label class="contact-form-label">Name:</label
-            ><input
-              type="text"
-              name="name"
-              class="contact-form-input"
-              required
-            />
-          </p>
-          <p>
-            <label class="contact-form-label">Email:</label
-            ><input
-              type="email"
-              name="email"
-              class="contact-form-input"
-              required
-            />
-          </p>
-          <p>
-            <label class="contact-form-label">Billion Dollar Idea:</label
-            ><textarea
-              name="message"
-              class="contact-form-input"
-              required
-            ></textarea>
-          </p>
-          <div data-netlify-recaptcha="true"></div>
-          <p>
-            <button type="submit" class="contact-form-button">Send</button>
-          </p>
-        </form>
+  <title>Mukul Raj Sharma</title>
+
+  <!-- LINKS -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" type="image/x-icon" href="/assets/icons/m-icon.png" />
+</head>
+
+<body onload="checkLightMode()">
+  <div class="container">
+    <div class="page-header">
+      <div class="theme-toggle">
+        <label class="switch">
+          <input onclick="toggleTheme()" type="checkbox" id="theme-check-box" />
+          <img src="/assets/icons/sun.svg" id="theme-selector" class="theme-selector" />
+        </label>
       </div>
     </div>
-  </body>
+    <div class="contact-section">
+      <form name="billion-dollar-form" method="POST" data-netlify="true" data-netlify-recaptcha="true"
+        class="contact-form">
+        <p>
+          <label class="contact-form-label">Name:</label><input type="text" name="name" class="contact-form-input"
+            required />
+        </p>
+        <p>
+          <label class="contact-form-label">Email:</label><input type="email" name="email" class="contact-form-input"
+            required />
+        </p>
+        <p>
+          <label class="contact-form-label">Billion Dollar Idea:</label><textarea name="message"
+            class="contact-form-input" required></textarea>
+        </p>
+        <div data-netlify-recaptcha="true"></div>
+        <p>
+          <button type="submit" class="contact-form-button">Send</button>
+        </p>
+      </form>
+    </div>
+  </div>
+</body>
+
 </html>
