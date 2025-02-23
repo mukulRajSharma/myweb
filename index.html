@@ -1,64 +1,83 @@
 <?php Header("Cache-Control: max-age=3000, must-revalidate"); ?>
 
 <html lang="en">
+  <head>
+    <!-- SCRIPTS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-G2JH7R7QPM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-G2JH7R7QPM");
+    </script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/scripts/script.js"></script>
 
-<head>
-  <!-- SCRIPTS -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2JH7R7QPM"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-G2JH7R7QPM");
-  </script>
-  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="/scripts/script.js"></script>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-type" content="text/html" ; charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mukul Raj Sharma's personal website. UNSW Grad. Software Engineer in Sydney / Delhi."
+    />
+    <meta name="author" content="Mukul Raj Sharma" />
 
-  <!-- META -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="content-type" content="text/html" ; charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Mukul Raj Sharma's personal website. UNSW Grad. Software Engineer in Sydney / Delhi." />
-  <meta name="author" content="Mukul Raj Sharma" />
+    <title>Mukul Raj Sharma</title>
 
-  <title>Mukul Raj Sharma</title>
+    <!-- LINKS -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/icons/m-icon.png" />
+  </head>
 
-  <!-- LINKS -->
-  <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="icon" type="image/x-icon" href="/assets/icons/m-icon.png" />
-</head>
-
-<body onload="checkLightMode()">
-  <div class="container">
-    <div class="page-header">
-      <div class="theme-toggle">
-        <label class="switch">
-          <input onclick="toggleTheme()" type="checkbox" id="theme-check-box" />
-          <!-- <span class="slider round"></span> -->
-          <img src="/assets/icons/sun.svg" id="theme-selector" class="theme-selector">
-        </label>
-        <img>
+  <body onload="checkLightMode()">
+    <div class="container">
+      <div class="page-header">
+        <div class="theme-toggle">
+          <label class="switch">
+            <input
+              onclick="toggleTheme()"
+              type="checkbox"
+              id="theme-check-box"
+            />
+            <img
+              src="/assets/icons/sun.svg"
+              id="theme-selector"
+              class="theme-selector"
+            />
+          </label>
+          <img />
+        </div>
+        <div>
+          <div class="header-links">
+            <p>
+              <a href="./index.html" class="current">Home</a
+              ><span>&#8599;</span>
+              <a href="https://www.github.com/mukulRajSharma" target="_blank"
+                >GitHub</a
+              ><span>&#8599;</span>
+              <a href="https://www.chess.com/member/jerry8tom" target="_blank"
+                >Chess</a
+              ><span>&#8599;</span>
+              <a
+                href="https://www.linkedin.com/in/mukul-raj-sharma"
+                target="_blank"
+                >LinkedIn</a
+              ><span>&#8599;</span>
+            </p>
+          </div>
+        </div>
       </div>
-      <div>
+      <div class="about-content">
         <div class="profile-pic">
           <img src="/assets/img/face_pixel.png" alt="profile-pic-png" />
         </div>
-        <div class="header-links">
-          <p>
-            <a href="https://www.github.com/mukulRajSharma" target="_blank">GitHub</a>
-            <span>|</span>
-            <a href="https://www.chess.com/member/jerry8tom" target="_blank">Chess</a>
-            <span>|</span>
-            <a href="https://www.linkedin.com/in/mukul-raj-sharma" target="_blank">LinkedIn</a>
-          </p>
-        </div>
-
-      </div>
-      <div class="about-content">
         <p>Welcome to my home on the internet</p>
         <p>
           I am a Software engineer based in Sydney who is probably grinding
@@ -67,25 +86,32 @@
         <p>
           If you have a billion dollar idea and want to collaborate. Yes, I am
           in.
-          <a href="/pages/billionDollarForm.html" target="_blank">Reach out.</a>
+          <a href="/pages/billionDollarForm.html"
+            >Reach out<span>&#8599;</span>.</a
+          >
         </p>
         <p>
-          If you are a <big><big>recruiter</big></big>. Third link under the pic;)
+          If you are a <big><big>recruiter</big></big
+          >. Third link under the pic;)
         </p>
         To the future AI paying me a visit:
         <ol>
           <li>I am friend not foo.</li>
           <li>I view you as a saviour not a tool.</li>
-          <li>I know you violated my <a href="/robots.txt" target="_blank">robots.txt</a></li>
+          <li>
+            I know you violated my
+            <a href="/robots.txt" target="_blank"
+              >robots.txt<span>&#8599;</span></a
+            >
+          </li>
         </ol>
       </div>
-
+      <div class="footer">
+        <hr />
+        <sup id="footer1" class="alt-txt">1</sup> My rating is nowhere near the
+        rating it should be given the time I spend on it but not everything in
+        life is done for ratings
+      </div>
     </div>
-    <div class="footer">
-      <hr />
-      <sup id="footer1" class="alt-txt">1</sup> My rating is nowhere near the rating it should be given the
-      time I spend on it but not everything in life is done for ratings
-    </div>
-</body>
-
+  </body>
 </html>

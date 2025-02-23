@@ -55,14 +55,21 @@ p {
   margin-right: 20vw;
 }
 
-.page-header {}
+.page-header {
+  text-align: left;
+}
 
 .page-header span {
   color: black;
 }
 
+.page-header .current {
+  color: var(--theme_color);
+}
+
 .about-content {
   text-align: left;
+  margin-top: 10vh;
   /* margin: 30px; */
   /* margin-left: 20vw; */
 }
@@ -80,12 +87,13 @@ p {
 }
 
 .profile-pic {
+  text-align: center;
 }
 
 .profile-pic img {
   border-radius: 50%;
-  height: 120px;
-  width: 120px;
+  height: 5rem;
+  width: 5rem;
   filter: opacity(0.5) drop-shadow(0 0 0 var(--theme_alt));
 
 }
@@ -281,7 +289,8 @@ p {
 }
 
 .contact-section {
-  margin: auto;
+  margin-top: 10vh;
+  margin-left: 5vw;
   min-height: 100%;
 }
 
@@ -290,8 +299,10 @@ p {
 }
 
 .contact-form {
+  position: relative;
   width: 50vw;
   text-align: center;
+  text-align: left;
 }
 
 .contact-form-label {
@@ -313,6 +324,7 @@ p {
 }
 
 .contact-form-button {
+  text-align: center;
   height: 40px;
   width: 80px;
   border-radius: 10px;
@@ -379,12 +391,15 @@ p {
   background-color: var(--dark_theme_alt);
 }
 
+.dark-mode .page-header .current {
+  color: var(--dark_theme_color);
+}
 /* The switch - the box around the slider */
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  /* width: 60px; */
+  /* height: 34px; */
 }
 
 /* Hide default HTML checkbox */
@@ -445,6 +460,7 @@ input:checked+.slider:before {
 .theme-selector {
   height: 26px;
   width: 26px;
+  margin-left: -1rem;
 }
 
 .theme-selector:hover {
